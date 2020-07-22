@@ -10,7 +10,7 @@ namespace PhoneBook.ViewModels
 {
     public class PostContactRequest : IValidatableObject
     {
-        [Required]
+        
         public string Name { get; set; }
         [Required]
 
