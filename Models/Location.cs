@@ -24,8 +24,8 @@ namespace PhoneBook.Data.Entities
         [Required(ErrorMessage = "Απαιτείται ταχυδρομικός κώδικας")]
         [Display(Name = "Ταχυδρομικός κώδικας")]
        
-        [MaxLength(5)]
-        [MinLength(1)]
+        [MaxLength(5, ErrorMessage="Μέγιστο μέγεθος Τ.Κ.= 5 ψηφία")]
+        [MinLength(3, ErrorMessage = "Ελάχιστο μέγεθος Τ.Κ.= 3 ψηφία")]
         [RegularExpression("^[0-9]*$", ErrorMessage = "Ο ταχυδρομικός κώδικας πρέπει ναναι 5 ψήφιος αριθμός")]
         public string ZipCode { get; set; }
 
