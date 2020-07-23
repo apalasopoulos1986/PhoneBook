@@ -170,6 +170,10 @@
     <Compile Include="Migrations\202007232230120_Soap.Designer.cs">
       <DependentUpon>202007232230120_Soap.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202007232247065_Final.cs" />
+    <Compile Include="Migrations\202007232247065_Final.Designer.cs">
+      <DependentUpon>202007232247065_Final.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\Location.cs" />
@@ -260,6 +264,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202007232230120_Soap.resx">
       <DependentUpon>202007232230120_Soap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007232247065_Final.resx">
+      <DependentUpon>202007232247065_Final.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
