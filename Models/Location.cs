@@ -13,27 +13,31 @@ namespace PhoneBook.Data.Entities
         public int LocationId { get; set; }
 
 
-        [Required(ErrorMessage = "Address Name is required")]
-        [Display(Name = "Όνομα Διεύθυνσης")]
+        [Required(ErrorMessage = "Απαιτείται διεύθυνση")]
+        [Display(Name = "Διεύθυνση")]
         public string AddressName { get; set; }
 
-        [Required(ErrorMessage = "Number is required")]
+        [Required(ErrorMessage = "Απαιτείται αριθμός")]
         [Display(Name = "Αριθμός")]
         public string No { get; set; }
 
-        [Required(ErrorMessage = "Zip Code is required")]
+        [Required(ErrorMessage = "Απαιτείται ταχυδρομικός κώδικας")]
         [Display(Name = "Ταχυδρομικός κώδικας")]
+       
+        [MaxLength(5)]
+        [MinLength(1)]
+        [RegularExpression("^[0-9]*$", ErrorMessage = "Ο ταχυδρομικός κώδικας πρέπει ναναι 5 ψήφιος αριθμός")]
         public string ZipCode { get; set; }
 
         [Display(Name = "Γεωγραφικό μήκος 'Latitude'")]
         public string Latitude { get; set; } //geografiko mikos 
         [Display(Name = "Γεωγραφικό πλάτος 'Longitude'")]
         public string Longitude { get; set; } //geografiko platos
-        [Required(ErrorMessage = "City is required")]
+        [Required(ErrorMessage = "Απαιτείται όνομα πόλης")]
         [Display(Name = "Πόλη")]
         public string City { get; set; }
 
-        [Required(ErrorMessage = "Area is required")]
+        [Required(ErrorMessage = "Απαιτείται όνομα περιοχής")]
         [Display(Name = "Περιοχή")]
         public string Area { get; set; }
 

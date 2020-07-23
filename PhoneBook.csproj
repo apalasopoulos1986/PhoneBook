@@ -150,6 +150,10 @@
     <Compile Include="Migrations\202007231851543_Init.Designer.cs">
       <DependentUpon>202007231851543_Init.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202007232133428_Restrictictions.cs" />
+    <Compile Include="Migrations\202007232133428_Restrictictions.Designer.cs">
+      <DependentUpon>202007232133428_Restrictictions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\Location.cs" />
@@ -225,6 +229,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202007231851543_Init.resx">
       <DependentUpon>202007231851543_Init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007232133428_Restrictictions.resx">
+      <DependentUpon>202007232133428_Restrictictions.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
