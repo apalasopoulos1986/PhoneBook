@@ -21,7 +21,12 @@ namespace PhoneBook.Controllers
             var contacts = db.Contacts.Include(c => c.Location);
             return View(contacts.ToList());
         }
+        public ActionResult AllContactsAndLocations()
+        {
+            var contacts = db.Contacts.Include(c => c.Location);
+            return View(contacts.ToList());
 
+        }
         // GET: Contacts/Details/5
         public ActionResult Details(int? id)
         {

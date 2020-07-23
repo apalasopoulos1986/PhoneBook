@@ -1,8 +1,19 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+@*Contacts List with web api*@ 
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
 
-<button id="load_Contacts">Contasts</button>
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+    </style>
+<button id="load_Contacts">Λίστα Επαφών (Web API)</button>
 
 <table id="table">
 </table>
@@ -32,23 +43,23 @@
                 var th1 = document.createElement("th");
                 th1.innerText = "id";
                 var th2 = document.createElement("th");
-                th2.innerText = "name";
+                th2.innerText = "Όνομα";
                 var th3 = document.createElement("th");
-                th3.innerText = "surname";
+                th3.innerText = "Επώνυμο";
                 var th4 = document.createElement("th");
-                th4.innerText = "email";
+                th4.innerText = "Εmail";
                 var th5 = document.createElement("th");
-                th5.innerText = "fixedphone";
+                th5.innerText = "Σταθερό Τηλέφωνο";
                 var th6 = document.createElement("th");
-                th6.innerText = "mobilephone";
+                th6.innerText = "Κινητό Τηλέφωνο";
                 var th7 = document.createElement("th");
-                th7.innerText = "address";
+                th7.innerText = "Διεύθυνση";
                 var th8 = document.createElement("th");
-                th8.innerText = "no";
+                th8.innerText = "Νούμερο";
                 var th9 = document.createElement("th");
-                th9.innerText = "area";
+                th9.innerText = "Περιοχή";
                 var th10 = document.createElement("th");
-                th10.innerText = "Πόλη";
+                th10.innerText = "Νομός";
 
 
                 trTH.append(th1);
