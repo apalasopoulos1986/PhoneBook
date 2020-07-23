@@ -142,23 +142,17 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\ContactsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Data\ContactsRepository.cs" />
-    <Compile Include="Data\Entities\Contact.cs" />
-    <Compile Include="Data\IContactsRepository.cs" />
-    <Compile Include="Data\Entities\Location.cs" />
-    <Compile Include="Data\ILocationsRepository.cs" />
-    <Compile Include="Data\LocationsRepository.cs" />
-    <Compile Include="Data\PhoneBookContext.cs" />
-    <Compile Include="Data\PhoneBookSeeder.cs" />
+    <Compile Include="Controllers\LocationsController.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\Location.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\MyDatabase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\LocationPostRequest.cs" />
-    <Compile Include="ViewModels\LocationPutRequest.cs" />
-    <Compile Include="ViewModels\PostContactRequest.cs" />
-    <Compile Include="ViewModels\PutContectRequest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -196,6 +190,17 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Contacts\CreateContact.cshtml" />
+    <Content Include="Views\Contacts\Delete.cshtml" />
+    <Content Include="Views\Contacts\Details.cshtml" />
+    <Content Include="Views\Contacts\Edit.cshtml" />
+    <Content Include="Views\Contacts\Index.cshtml" />
+    <Content Include="Views\Locations\Create.cshtml" />
+    <Content Include="Views\Locations\Delete.cshtml" />
+    <Content Include="Views\Locations\Details.cshtml" />
+    <Content Include="Views\Locations\Edit.cshtml" />
+    <Content Include="Views\Locations\Index.cshtml" />
+    <Content Include="Views\Contacts\CreateLocation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

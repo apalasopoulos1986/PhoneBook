@@ -8,9 +8,8 @@ namespace PhoneBook.Data.Entities
     public class Contact
     {
         #region Contact_Properties
-        [Key]
-        public Guid Id { get; set; }
-
+       
+        public int ContactId { get; set; }
 
         public string Name { get; set; }
 
@@ -18,12 +17,13 @@ namespace PhoneBook.Data.Entities
 
         public string Email { get; set; }
 
-
-        public string ZipCode { get; set; }
-
         public string FixedPhone { get; set; }
 
         public string MobilePhone { get; set; }
+
+        public int? LocationId { get; set; }
+        public virtual Location Location { get; set; }
+
         #endregion
 
     }
