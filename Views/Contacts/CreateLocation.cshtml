@@ -2,6 +2,18 @@
 @model PhoneBook.Data.Entities.Location
 
 
+
+<style>
+    #map {
+        height: 100%;
+    }
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+</style>
 <br />
 <br />
 
@@ -15,7 +27,7 @@
 
 
 @using (Html.BeginForm())
-{
+{ 
     @Html.AntiForgeryToken()
     <div class="form-horizontal">
 
@@ -115,4 +127,5 @@
     }
 </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyD6LYJ8QLGzMCazveeiZ0gY6S4xAEJP6LE&callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyA_JBPxwkVnDXnNZRqKGSvgE-K5ABM29YI&callback=initMap"></script>
+
