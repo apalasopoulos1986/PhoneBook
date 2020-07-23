@@ -166,6 +166,10 @@
     <Compile Include="Migrations\202007232213489_12.Designer.cs">
       <DependentUpon>202007232213489_12.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202007232230120_Soap.cs" />
+    <Compile Include="Migrations\202007232230120_Soap.Designer.cs">
+      <DependentUpon>202007232230120_Soap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\Location.cs" />
@@ -253,6 +257,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202007232213489_12.resx">
       <DependentUpon>202007232213489_12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007232230120_Soap.resx">
+      <DependentUpon>202007232230120_Soap.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
