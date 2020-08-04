@@ -18,6 +18,7 @@ namespace PhoneBook.Data.Entities
         public string AddressName { get; set; }
 
         [Required(ErrorMessage = "Απαιτείται αριθμός")]
+        [RegularExpression("^[0-9]*$", ErrorMessage = "Η συγκεκριμένη καταχώρηση πρέπει να έχει αριθμητική μορφή")]
         [Display(Name = "Αριθμός")]
         public string No { get; set; }
 
